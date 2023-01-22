@@ -34,7 +34,7 @@ def edit_item(request, item_id):
             return redirect('get_todo_list')
     form = ItemForm(instance=item)
     context = {'form': form}
-    return render(request, 'todo/add_item.html', context)
+    return render(request, 'todo/edit_item.html', context)
 
 
 def toggle_item(request, item_id):
